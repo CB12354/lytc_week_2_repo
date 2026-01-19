@@ -1,0 +1,22 @@
+{
+  "name": "ML_Week_2",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "other-publisher.extension-name",
+        "ms-toolsai.datawrangler",
+        "GitHub.copilot-chat",
+        "ms-toolsai.jupyter",
+        "congyiwu.vscode-jupytext",
+        "magicstack.MagicPython",
+        "ms-python.vscode-python-envs",
+        "donjayamanne.python-extension-pack",
+        "ExecutableBookProject.myst-highlight"
+      ]
+    }
+  }
+}
+
