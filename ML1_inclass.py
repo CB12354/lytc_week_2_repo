@@ -14,7 +14,7 @@ ML1 In-Class
 
 # %%
 # import packages
-from turtle import color
+#from turtle import color
 from pydataset import data
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -30,8 +30,10 @@ iris.head()
 
 # %%
 # What mental models can we see from these data sets?
-# What data science questions can we ask?
+## Could we use each flower's measurements to predict its species? 
 
+# What data science questions can we ask?
+## Could a classification algorithm like KNN be used to make the mental model happen?
 # %%
 """
 Example: k-Nearest Neighbors
@@ -94,9 +96,14 @@ Mild disclaimer
 # For now, ask yourself:
 
 # 1. What is the purpose of data splitting?
+## Training a model on data it has already seen is a bad idea. It will generally predict data it has already seen correctly which can bias results to be appear accurate than they actually would be given a proper test data set.
 # 2. What can we learn from data testing/validation?
+## You can find out the accuracy of the model for unseen data rather than just the data it is trained on. This is more useful because data in the wild is unknown and likely different from training data.
 # 3. How do we know if a model is working?
+## It depends on the metric. In this case, it's how accurately it classifies the species of the irises based on the petal and sepal measurements.
 # 4. How could we find the model error?
+## Is error just (1 - accuracy)? The accuracy I got for the training data that was 1/3 of the full data set and with k=3 was .96 and for the test data 0.98, so the error would be .04 and .02 if that is correct
 
 # If you want, try changing the size of the test data
 # or the number of n_neighbors and see what changes!
+## Lower amounts of testing data made the test more accurate, but that might not be true for all cases. Changing k from 3 made the model less accurate.
